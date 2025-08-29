@@ -5,8 +5,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import joblib
 
 # 1. Load dataset
-data = pd.read_csv("dataset.csv")
-
+data = pd.read_csv("phishing-detector/data/urls.csv")
 # 2. Split features & target
 X = data.drop(columns=["Result", "URL"])
 y = data["Result"]
